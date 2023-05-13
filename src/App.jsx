@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import NavBar from './NavBar'
-import MainSection from './mainSection'
+import MainSection from './MainSection'
 import AboutMe from './AboutMe'
 import MySkills from './MySkills'
 import Projects from './projects'
