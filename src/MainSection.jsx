@@ -4,10 +4,6 @@ import download from "../Photos/download.png"
 import bilal from "../Photos/Bilal.png"
 
 import React, { useRef, useEffect } from 'react';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-
-
-
 
 export default function MainSection(){
 
