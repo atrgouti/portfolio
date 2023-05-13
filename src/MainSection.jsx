@@ -1,7 +1,7 @@
 import "./MainSectionStyle.css"
 import MyNameLogo from "../Photos/MyNameLogo.png"
 import download from "../Photos/download.png"
-import bilal from "../Photos/bilal.png"
+import bilal from "../Photos/Bilal.png"
 
 import React, { useRef, useEffect } from 'react';
 
