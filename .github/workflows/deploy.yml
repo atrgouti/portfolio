@@ -8,14 +8,14 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: node16
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
 
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v16
         with:
           node-version: 16
 
@@ -34,7 +34,7 @@ jobs:
   deploy:
     name: Deploy
     needs: build
-    runs-on: node16
+    runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
 
     steps:
