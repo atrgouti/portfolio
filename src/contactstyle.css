@@ -1,3 +1,9 @@
+html{
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
 .contactContainer{
     background-color: #111320;
     padding-bottom: 40px;

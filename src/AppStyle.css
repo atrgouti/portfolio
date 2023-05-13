@@ -5,4 +5,5 @@ body{
     box-sizing: border-box;
     font-family: "Inconsolata";
     overflow-x: hidden;
+    position:relative;
 }
