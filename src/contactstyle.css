@@ -1,0 +1,40 @@
+.contactContainer{
+    background-color: #111320;
+    padding-bottom: 40px;
+}
+.contactContainer .aboutme{
+    color: #61dafb;
+    margin: 0;
+    font-size: 35px;
+    padding-top: 0px;
+    text-align: center;
+    padding: 30px 0px;
+}
+.contactContainer h2{
+    margin: 0;
+}
+.contactContainer .letContact{
+    color: white;
+    margin-left: 10%;
+}
+.contactContainer .letContact p{
+    margin: 0;
+    max-width: 90%;
+    padding: 20px 0px;
+}
+.contactContainer .letContact .email{
+    font-size: 24px;
+}
+.contactContainer .letContact .Available{
+    background-color: #61dafb;
+    padding: 10px;
+    color: #111320;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 800px){
+    .contactContainer .letContact .freelance{
+        font-size: 14px;
+        width: 98%;
+    }
+}

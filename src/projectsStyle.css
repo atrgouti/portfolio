@@ -1,0 +1,136 @@
+.projectsContainer{
+    background-color: #111320;
+    padding-bottom: 20px;
+}
+
+.projectsContainer .aboutme{
+    color: #61dafb;
+    margin: 0;
+    font-size: 35px;
+    padding-top: 0px;
+    text-align: center;
+    padding: 30px 0px;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: 0.3s;
+}
+.projectsContainer .aboutme.active{
+    opacity: 1;
+    transform: translateY(0);
+}
+.projectsContainer .project{
+    height: fit-content;
+    max-width: 1400px;
+    width: 90%;
+    background-color: #2d303d;
+    margin: 20px auto;
+    /* padding: 20px 0px; */
+    display: flex;
+    color: white;
+}
+.projectsContainer .project img{
+    width: 50%;
+    height: auto;
+}
+.projectsContainer .project .infos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.projectsContainer .project .infos p{
+    text-align: center;
+    width: 90%;
+}
+.projectsContainer .project .infos .technologies{
+    display: flex;
+}
+.projectsContainer .project .infos .technologies p {
+    padding: 10px;
+    font-weight: bold;
+}
+.projectsContainer .project .infos .linksGit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projectsContainer .project .infos .linksLive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projectsContainer .project .infos .linksGit img{
+    height: 30px;
+    width: auto;
+    padding: 2px;
+}
+.projectsContainer .project .infos .linksLive img{
+    height: 25px;
+    width: auto;
+    padding: 2px;
+}
+.projectsContainer .project .infos .linksGit, .projectsContainer .project .infos .linksLive{
+    padding: 0px 30px;
+    padding-bottom: 20px;
+}
+.projectsContainer .project .allLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectsContainer .project .allLinks a{
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width: 800px){
+    .projectsContainer .project{
+        flex-direction: column;
+    }
+    .projectsContainer .project img{
+        width: 100%;
+        height: 50%;
+    }
+    .projectsContainer .project .infos{
+        width: 100%;
+        height: 50%;
+    }
+
+}
+
+/* .projectsContainer .germanigo{
+    margin-bottom: 100px;
+} */
+
+
+
+.project1{
+    opacity: 0;
+    transform: translateX(-30%);
+    transition: 0.3s;
+}
+.project1.active{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.project2{
+    opacity: 0;
+    transform: translateX(30%);
+    transition: 0.3s;
+}
+.project2.active{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.project3{
+    opacity: 0;
+    transform: translateX(-30%);
+    transition: 0.3s;
+}
+.project3.active{
+    opacity: 1;
+    transform: translateX(0%);
+}
