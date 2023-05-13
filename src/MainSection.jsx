@@ -4,6 +4,7 @@ import download from "../Photos/download.png"
 import bilal from "../Photos/Bilal.png"
 
 import React, { useRef, useEffect } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 
@@ -18,10 +19,7 @@ export default function MainSection(){
       if (entry.isIntersecting) {
         // Add active class when the image is visible
         entry.target.classList.add('active');
-      } else {
-        // Remove active class when the image is not visible
-        entry.target.classList.remove('active');
-      }
+      } 
     });
     };
 
@@ -53,7 +51,6 @@ export default function MainSection(){
     }, []);
 
 
-
     return(
         <>
         <div className="MainContainer">
@@ -62,12 +59,12 @@ export default function MainSection(){
                 <img className="mynamelogo" src={MyNameLogo} alt="" />
                 <h1 className="software">Software Engineer</h1>
                 <span className="resume">
-                    <a href=""><img src={download} alt="" /></a>
+                    <a href=""><img src={download} loading="lazy" alt="" /></a>
                     <a href=""><p>Resume</p></a>
                 </span>
             </div>
             <div className="me" ref={targetRef}>
-                <img src={bilal} loading="lazy" alt="" />
+                <img src={bilal} loading="lazy"  alt="" />
             </div>
         </div>
         <div className="lineOrange"></div>

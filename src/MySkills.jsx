@@ -66,7 +66,7 @@ export default function MySkills(){
     }, []);
 
     return(
-        <div className="containerSkills">
+        <div className="containerSkills" id="MySkills">
             <p className="aboutme" ref={targetRef}>Skills<span>()</span></p>
             <div className="wrapper">
                 <div className="left" ref={targetRef2}>
