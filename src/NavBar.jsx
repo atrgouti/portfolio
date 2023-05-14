@@ -3,7 +3,6 @@ import logo from "../Photos/logo.svg"
 import linkdlen from "../Photos/linkdlen.svg"
 import github from "../Photos/github.svg"
 import contact from "../Photos/contact.svg"
-import MySkills from "./MySkills"
 import "./NavbarStyle.css"
 export default function NavBar(){
 

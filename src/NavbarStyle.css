@@ -88,6 +88,7 @@ body{
     .container{
         justify-content: space-between;
         align-items: center;
+        position: relative;
     }
     .container ul{
         position: absolute;
@@ -112,7 +113,7 @@ body{
     .container .contact{
         display: block;
         position: absolute;
-        top: 50%;
+        top: 300%;
         left: 50%;
         z-index: 10;
         transform: translateX(120%);
