@@ -55,12 +55,12 @@ export default function MainSection(){
                 <img className="mynamelogo" src={MyNameLogo} alt="" />
                 <h1 className="software">Software Engineer</h1>
                 <span className="resume">
-                    <a href=""><img src={download} loading="lazy" alt="" /></a>
+                    <a href=""><img src={download} alt="" /></a>
                     <a href=""><p>Resume</p></a>
                 </span>
             </div>
             <div className="me" ref={targetRef}>
-                <img src={bilal} loading="lazy"  alt="" />
+                <img src={bilal}  alt="" />
             </div>
         </div>
         <div className="lineOrange"></div>

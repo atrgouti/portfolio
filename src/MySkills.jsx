@@ -71,42 +71,42 @@ export default function MySkills(){
             <div className="wrapper">
                 <div className="left" ref={targetRef2}>
                     <div className="box">
-                        <img src={html} alt="" />
+                        <img src={html} loading="lazy" alt="" />
                     </div>
                     <div className="box">
-                        <img src={css} alt="" />
+                        <img src={css} loading="lazy" alt="" />
                     </div>
                     <div className="box">
-                        <img src={javascript} alt="" />
+                        <img src={javascript} loading="lazy" alt="" />
                     </div>
                     <div className="box">
-                        <img src={Bootstrap} alt="" />
+                        <img src={Bootstrap} loading="lazy" alt="" />
                     </div>
                     <div className="box">
-                        <img src={git} alt="" />
+                        <img src={git} loading="lazy" alt="" />
                     </div>
                     <div className="box">
-                        <img src={sass} alt="" />
+                        <img src={sass} loading="lazy" alt="" />
                     </div>
                 </div>
                 <div className="right" ref={targetRef3}>
                     <div className="box">
-                        <img src={reactIcon} alt="" />
+                        <img src={reactIcon} loading="lazy" alt="" />
                     </div>
                     <div className="box">
-                        <img src={typescript} alt="" />
+                        <img src={typescript} loading="lazy" alt="" />
                     </div>
                     <div className="box">
-                        <img src={laravel} alt="" />
+                        <img src={laravel} loading="lazy" alt="" />
                     </div>
                     <div className="box">
-                        <img src={mysql} alt="" />
+                        <img src={mysql} loading="lazy" alt="" />
                     </div>
                     <div className="box">
-                        <img src={javascript} alt="" />
+                        <img src={javascript} loading="lazy" alt="" />
                     </div>
                     <div className="box">
-                        <img src={javascript} alt="" />
+                        <img src={javascript} loading="lazy" alt="" />
                     </div>
                 </div>
             </div>
