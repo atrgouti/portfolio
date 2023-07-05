@@ -158,20 +158,32 @@ export default function Projects() {
           <span className="allLinks">
             <div className="linksGit">
               <p>
-                <a href="">Code</a>
+                <a
+                  href="https://github.com/atrgouti/atrgouti.github.io/tree/main/weatherApp"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Code
+                </a>
               </p>
-              <a href="">
+              <a
+                href="https://github.com/atrgouti/atrgouti.github.io/tree/main/weatherApp"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={githubIcon} loading="lazy" alt="" />
               </a>
             </div>
-            <div className="linksLive">
-              <p>
-                <a href="">Live Demo</a>
+            {/* <div className="linksLive"> */}
+            {/* <p>
+                <a href="" target="_blank" rel="noreferrer">
+                  Live Demo
+                </a>
               </p>
-              <a href="">
+              <a href="" target="_blank" rel="noreferrer">
                 <img src={liveDemo} loading="lazy" alt="" />
-              </a>
-            </div>
+              </a> */}
+            {/* </div> */}
           </span>
         </div>
       </div>
@@ -198,17 +210,37 @@ export default function Projects() {
           <span className="allLinks">
             <div className="linksGit">
               <p>
-                <a href="">Code</a>
+                <a
+                  href="https://github.com/atrgouti/atrgouti.github.io/tree/main/blogr-landing-page-main"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Code
+                </a>
               </p>
-              <a href="">
+              <a
+                href="https://github.com/atrgouti/atrgouti.github.io/tree/main/blogr-landing-page-main"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={githubIcon} loading="lazy" alt="" />
               </a>
             </div>
             <div className="linksLive">
               <p>
-                <a href="">Live Demo</a>
+                <a
+                  href="https://atrgouti.github.io/blogr-landing-page-main/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live Demo
+                </a>
               </p>
-              <a href="">
+              <a
+                href="https://atrgouti.github.io/blogr-landing-page-main/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={liveDemo} loading="lazy" alt="" />
               </a>
             </div>
@@ -240,20 +272,30 @@ export default function Projects() {
           <span className="allLinks">
             <div className="linksGit">
               <p>
-                <a href="">Code</a>
+                <a
+                  href="https://github.com/atrgouti/atrgouti.github.io/tree/main/germanigo"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Code
+                </a>
               </p>
-              <a href="">
+              <a
+                href="https://github.com/atrgouti/atrgouti.github.io/tree/main/germanigo"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img src={githubIcon} loading="lazy" alt="" />
               </a>
             </div>
-            <div className="linksLive">
+            {/* <div className="linksLive">
               <p>
                 <a href="">Live Demo</a>
               </p>
               <a href="">
                 <img src={liveDemo} loading="lazy" alt="" />
               </a>
-            </div>
+            </div> */}
           </span>
         </div>
       </div>
