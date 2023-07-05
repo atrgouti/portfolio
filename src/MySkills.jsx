@@ -1,115 +1,114 @@
-import "./mySkillsStyles.css"
-import html from "../Photos/skillIcons/html.png"
-import css from "../Photos/skillIcons/css.png"
-import Bootstrap from "../Photos/skillIcons/Bootstrap.png"
-import git from "../Photos/skillIcons/git.png"
-import javascript from "../Photos/skillIcons/javascript.png"
-import laravel from "../Photos/skillIcons/laravel.png"
-import mysql from "../Photos/skillIcons/mysql.png"
-import php from "../Photos/skillIcons/php.png"
-import sass from "../Photos/skillIcons/sass.png"
-import typescript from "../Photos/skillIcons/typescript.png"
-import reactIcon from "../Photos/skillIcons/reactIcon.png"
-import React, { useRef, useEffect } from 'react';
+import "./mySkillsStyles.css";
+import html from "../Photos/skillIcons/html.png";
+import css from "../Photos/skillIcons/css.png";
+import Bootstrap from "../Photos/skillIcons/Bootstrap.png";
+import git from "../Photos/skillIcons/git.png";
+import javascript from "../Photos/skillIcons/javascript.png";
+import laravel from "../Photos/skillIcons/laravel.png";
+import mysql from "../Photos/skillIcons/mysql.png";
+import php from "../Photos/skillIcons/php.png";
+import sass from "../Photos/skillIcons/sass.png";
+import python from "../Photos/skillIcons/python.png";
+import figma from "../Photos/skillIcons/figma.png";
+import typescript from "../Photos/skillIcons/typescript.png";
+import reactIcon from "../Photos/skillIcons/reactIcon.png";
+import React, { useRef, useEffect } from "react";
 
+export default function MySkills() {
+  const targetRef = useRef(null);
+  const targetRef2 = useRef(null);
+  const targetRef3 = useRef(null);
 
-
-
-export default function MySkills(){
-
-
-    const targetRef = useRef(null);
-    const targetRef2 = useRef(null);
-    const targetRef3 = useRef(null);
-
-    const handleIntersection = (entries) => {
+  const handleIntersection = (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         // Add active class when the image is visible
-        entry.target.classList.add('active');
-      } 
+        entry.target.classList.add("active");
+      }
     });
+  };
+
+  useEffect(() => {
+    const options = {
+      root: null, // Use the viewport as the root element
+      rootMargin: "0px",
+      threshold: 0.5, // Customize the threshold value as desired
     };
 
-    useEffect(() => {
-        const options = {
-          root: null, // Use the viewport as the root element
-          rootMargin: '0px',
-          threshold: 0.5 // Customize the threshold value as desired
-        };
+    const observer = new IntersectionObserver(handleIntersection, options);
+    const observer2 = new IntersectionObserver(handleIntersection, options);
+    const observer3 = new IntersectionObserver(handleIntersection, options);
 
-        const observer = new IntersectionObserver(handleIntersection, options);
-        const observer2 = new IntersectionObserver(handleIntersection, options);
-        const observer3 = new IntersectionObserver(handleIntersection, options);
+    if (targetRef.current) {
+      observer.observe(targetRef.current);
+    }
+    if (targetRef2.current) {
+      observer2.observe(targetRef2.current);
+    }
+    if (targetRef3.current) {
+      observer3.observe(targetRef3.current);
+    }
 
-        if (targetRef.current) {
-          observer.observe(targetRef.current);
-        }
-        if (targetRef2.current) {
-          observer2.observe(targetRef2.current);
-        }
-        if (targetRef3.current) {
-          observer3.observe(targetRef3.current);
-        }
-    
-        return () => {
-          if (targetRef.current) {
-            observer.unobserve(targetRef.current);
-          }
-          if (targetRef2.current) {
-            observer2.unobserve(targetRef2.current);
-          }
-          if (targetRef3.current) {
-            observer3.unobserve(targetRef3.current);
-          }
-        };
-    }, []);
+    return () => {
+      if (targetRef.current) {
+        observer.unobserve(targetRef.current);
+      }
+      if (targetRef2.current) {
+        observer2.unobserve(targetRef2.current);
+      }
+      if (targetRef3.current) {
+        observer3.unobserve(targetRef3.current);
+      }
+    };
+  }, []);
 
-    return(
-        <div className="containerSkills" id="MySkills">
-            <p className="aboutme" ref={targetRef}>Skills<span>()</span></p>
-            <div className="wrapper">
-                <div className="left" ref={targetRef2}>
-                    <div className="box">
-                        <img src={html} loading="lazy" alt="" />
-                    </div>
-                    <div className="box">
-                        <img src={css} loading="lazy" alt="" />
-                    </div>
-                    <div className="box">
-                        <img src={javascript} loading="lazy" alt="" />
-                    </div>
-                    <div className="box">
-                        <img src={Bootstrap} loading="lazy" alt="" />
-                    </div>
-                    <div className="box">
-                        <img src={git} loading="lazy" alt="" />
-                    </div>
-                    <div className="box">
-                        <img src={sass} loading="lazy" alt="" />
-                    </div>
-                </div>
-                <div className="right" ref={targetRef3}>
-                    <div className="box">
-                        <img src={reactIcon} loading="lazy" alt="" />
-                    </div>
-                    <div className="box">
-                        <img src={typescript} loading="lazy" alt="" />
-                    </div>
-                    <div className="box">
-                        <img src={laravel} loading="lazy" alt="" />
-                    </div>
-                    <div className="box">
-                        <img src={mysql} loading="lazy" alt="" />
-                    </div>
-                    <div className="box">
-                        <img src={javascript} loading="lazy" alt="" />
-                    </div>
-                    <div className="box">
-                        <img src={javascript} loading="lazy" alt="" />
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="containerSkills" id="MySkills">
+      <p className="aboutme" ref={targetRef}>
+        Skills<span>()</span>
+      </p>
+      <div className="wrapper">
+        <div className="left" ref={targetRef2}>
+          <div className="box">
+            <img src={html} loading="lazy" alt="" />
+          </div>
+          <div className="box">
+            <img src={css} loading="lazy" alt="" />
+          </div>
+          <div className="box">
+            <img src={javascript} loading="lazy" alt="" />
+          </div>
+          <div className="box">
+            <img src={Bootstrap} loading="lazy" alt="" />
+          </div>
+          <div className="box">
+            <img src={git} loading="lazy" alt="" />
+          </div>
+          <div className="box">
+            <img src={sass} loading="lazy" alt="" />
+          </div>
         </div>
-    )
+        <div className="right" ref={targetRef3}>
+          <div className="box">
+            <img src={reactIcon} loading="lazy" alt="" />
+          </div>
+          <div className="box">
+            <img src={typescript} loading="lazy" alt="" />
+          </div>
+          <div className="box">
+            <img src={laravel} loading="lazy" alt="" />
+          </div>
+          <div className="box">
+            <img src={mysql} loading="lazy" alt="" />
+          </div>
+          <div className="box">
+            <img src={python} loading="lazy" alt="" />
+          </div>
+          <div className="box">
+            <img src={figma} loading="lazy" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
