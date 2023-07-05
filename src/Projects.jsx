@@ -9,6 +9,7 @@ import React, { useRef, useEffect } from "react";
 
 export default function Projects() {
   const targetRef = useRef(null);
+  const targetRef0 = useRef(null);
   const targetRef2 = useRef(null);
   const targetRef3 = useRef(null);
   const targetRef4 = useRef(null);
@@ -30,6 +31,7 @@ export default function Projects() {
     };
 
     const observer = new IntersectionObserver(handleIntersection, options);
+    const observer0 = new IntersectionObserver(handleIntersection, options);
     const observer2 = new IntersectionObserver(handleIntersection, options);
     const observer3 = new IntersectionObserver(handleIntersection, options);
     const observer4 = new IntersectionObserver(handleIntersection, options);
@@ -46,6 +48,9 @@ export default function Projects() {
     if (targetRef4.current) {
       observer4.observe(targetRef4.current);
     }
+    if (targetRef0.current) {
+      observer0.observe(targetRef0.current);
+    }
 
     return () => {
       if (targetRef.current) {
@@ -60,6 +65,9 @@ export default function Projects() {
       if (targetRef4.current) {
         observer4.unobserve(targetRef4.current);
       }
+      if (targetRef0.current) {
+        observer0.unobserve(targetRef0.current);
+      }
     };
   }, []);
 
@@ -69,7 +77,7 @@ export default function Projects() {
         Projects<span>()</span>
       </p>
 
-      <div className="project project1" ref={targetRef2}>
+      <div className="project project0" ref={targetRef0}>
         <img src={eduAdmin} loading="lazy" alt="" />
         <div className="infos">
           <h1>EduAdmin</h1>
