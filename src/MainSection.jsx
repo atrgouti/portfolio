@@ -2,7 +2,7 @@ import "./MainSectionStyle.css";
 import MyNameLogo from "../Photos/MyNameLogo.png";
 import download from "../Photos/download.png";
 import bilal from "../Photos/Bilal.png";
-import resumeFile from "../Photos/resume.pdf";
+import resumeFile from "../Photos/bilalresume.pdf";
 import React, { useRef, useEffect } from "react";
 
 export default function MainSection() {
