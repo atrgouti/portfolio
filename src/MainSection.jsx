@@ -55,11 +55,11 @@ export default function MainSection() {
           <h1>Hello, I am</h1>
           <img className="mynamelogo" src={MyNameLogo} alt="" />
           <h1 className="software">Software Engineer</h1>
-          <span className="resume">
+          <span className="resume" onClick={handleDownload}>
             <a href="">
               <img src={download} alt="" />
             </a>
-            <a href="" onClick={handleDownload}>
+            <a href="">
               <p>Resume</p>
             </a>
           </span>
